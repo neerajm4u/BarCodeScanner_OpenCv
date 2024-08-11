@@ -146,7 +146,7 @@ class MainActivity : AppCompatActivity() {
                    viewBinding.img.setImageBitmap(it)
         }*/
         qrViewModel.decodedData.observe(this) {
-            viewBinding.decodedDataTextView.text = it
+            viewBinding.decodedDataTextView.text = "Decoded QR : " + it
         }
     }
 
