@@ -17,7 +17,8 @@ import org.opencv.core.Mat
 import org.opencv.objdetect.QRCodeDetector
 
 
-class QrCodeAnalyzer(private val qr: QRCodeDetector, private val h: Int, private val w: Int , private val qrViewModel: QrViewModel) : ImageAnalysis.Analyzer {
+class QrCodeAnalyzer(private val qr: QRCodeDetector, private val h: Int, private val w: Int , private val qrViewModel: QrViewModel)
+    : ImageAnalysis.Analyzer {
 
     @OptIn(ExperimentalGetImage::class)
     override fun analyze(image: ImageProxy) {
